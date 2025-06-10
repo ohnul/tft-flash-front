@@ -10,6 +10,7 @@ TFT Flash Play는 전략적 팀전투(TFT) 묘수풀이라는 컨셉의 서비�
 ## 기술 스택
 - 프론트엔드: Next.js 15, React 19, TypeScript, Tailwind CSS 4, shadcn/ui
 - 백엔드: Supabase
+- 문제 관리: Google Sheets (초기), Supabase 동기화 (추후)
 - 배포: AWS
 - CI/CD: GitHub Actions
 - 버전 관리: Git, GitHub
@@ -41,6 +42,35 @@ TFT Flash Play는 전략적 팀전투(TFT) 묘수풀이라는 컨셉의 서비�
     - 상점 정보
     - 아이템 선택 정보
 
+### 문제 관리 시스템
+- 초기 단계: Google Sheets를 활용한 문제 입력 및 관리
+  - 비개발자도 쉽게 접근 가능한 인터페이스
+  - 실시간 협업을 통한 문제 출제 및 검증
+  - 문제 데이터 구조화 및 표준화
+- 향후 계획: Google Sheets → Supabase 자동 동기화
+  - Google Apps Script 또는 정기 배치 작업 구현
+  - 승인된 문제만 Supabase로 이관
+  - 서비스는 Supabase에서 데이터 제공
+
+## 구글 시트
+
+### Main_Problems
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRca8gsN664nWMDKSMerNFUrgFjXxcfeq9vT4O1nYcUzLXqy6s7fZxl-wozeRuc96XniqyxKgkyYCQO/pub?gid=0&single=true&output=csv
+
+### Player_States
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRca8gsN664nWMDKSMerNFUrgFjXxcfeq9vT4O1nYcUzLXqy6s7fZxl-wozeRuc96XniqyxKgkyYCQO/pub?gid=2068211344&single=true&output=csv
+
+### Champions
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRca8gsN664nWMDKSMerNFUrgFjXxcfeq9vT4O1nYcUzLXqy6s7fZxl-wozeRuc96XniqyxKgkyYCQO/pub?gid=1927672651&single=true&output=csv
+
+### Shop_Items
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRca8gsN664nWMDKSMerNFUrgFjXxcfeq9vT4O1nYcUzLXqy6s7fZxl-wozeRuc96XniqyxKgkyYCQO/pub?gid=939417559&single=true&output=csv
+
+### Solutions
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRca8gsN664nWMDKSMerNFUrgFjXxcfeq9vT4O1nYcUzLXqy6s7fZxl-wozeRuc96XniqyxKgkyYCQO/pub?gid=1526512932&single=true&output=csv
+
+
+---
 
 ## 추후 계획
 
